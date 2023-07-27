@@ -48,8 +48,7 @@ export class LoginComponent {
     if (this.form.invalid) {
       return;
     }
-    this.loginService.login(this.form.value).subscribe((data)=>{
-    })
+    this.loginService.login(this.form.value)
   }
   onReset(): void {
     this.submitted = false;
